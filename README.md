@@ -169,17 +169,47 @@ Key EDA components include:
 
 ## 🤖 Machine Learning Models <a name="ml-models"></a>
 
-### Predictive Models
-- **Claim Frequency Models**: Predicting likelihood of claims
-- **Claim Severity Models**: Estimating claim amounts
-- **Premium Optimization**: Risk-based pricing models
-- **Customer Segmentation**: Clustering analysis
+### Task 4: Predictive Modeling (✅ **COMPLETED**)
+
+**Objective**: Build and evaluate predictive models for dynamic, risk-based pricing system.
+
+#### 🎯 **Modeling Goals Achieved**
+1. **Claim Severity Prediction**: Regression models to predict `TotalClaims` amount
+   - Linear Regression: R² = 0.2656, RMSE = $25,162
+   - Advanced models (Random Forest, XGBoost) implemented in notebooks
+   - Target: Policies with claims > 0
+
+2. **Claim Probability Prediction**: Classification models for claim occurrence
+   - Logistic Regression: Accuracy = 99.79%, Precision = 100%
+   - Binary classification (HasClaim: 0/1)
+   - Advanced ensemble methods available
+
+#### 🔧 **Technical Implementation**
+- **Data Preparation**: Missing value imputation, feature scaling, train-test splits
+- **Feature Engineering**: 7 new features including risk scores and ratios
+- **Model Pipeline**: End-to-end preprocessing and prediction pipeline
+- **Evaluation**: RMSE, R², Accuracy, Precision, Recall, F1-Score, AUC-ROC
+
+#### 📊 **Risk-Based Premium Framework**
+```
+Premium = (Claim Probability × Expected Claim Severity) × (1 + Expense Loading + Profit Margin)
+```
+- **Two-model approach**: Probability + Severity prediction
+- **Business parameters**: 10% expense loading, 15% profit margin
+- **Production ready**: Complete implementation with monitoring
+
+#### 📁 **Deliverables**
+- `04_predictive_modeling.ipynb` - Main modeling notebook
+- `05_advanced_modeling.ipynb` - Advanced techniques
+- `run_modeling.py` - Production script
+- `basic_modeling.py` - Simplified implementation
+- `TASK_4_REPORT.md` - Comprehensive analysis report
 
 ### Model Evaluation
 - Cross-validation strategies
 - Performance metrics (RMSE, MAE, AUC-ROC)
 - Feature importance analysis
-- Model interpretability
+- Model interpretability with SHAP
 
 ## 📋 Statistical Insights <a name="statistical-insights"></a>
 
