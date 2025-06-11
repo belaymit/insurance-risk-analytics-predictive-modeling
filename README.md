@@ -190,11 +190,10 @@ Key EDA components include:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Your Name**
+👤 **Belay Birhanu G.**
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+- GitHub: [@Github](https://github.com/belaymit)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/belay-bgwa/)
 
 ## 🤝 Contributing <a name="contributing"></a>
 
