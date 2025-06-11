@@ -101,9 +101,9 @@ def generate_insurance_data(n_records=10000):
         # Vehicle value estimate
         vehicle_age = 2023 - vehicle_year
         base_value = 25000 if vehicle_type in ['SUV', 'Truck'] else 20000
-        depreciation = 0.15 * vehicle_age
+        depreciation = min(0.15 * vehicle_age, 0.85)  # Cap depreciation at 85%
         custom_value_estimate = base_value * (1 - depreciation) * np.random.uniform(0.8, 1.2)
-        custom_value_estimate = round(custom_value_estimate, 2)
+        custom_value_estimate = max(round(custom_value_estimate, 2), 1000)  # Minimum value of $1000
         
         # Claims generation (not everyone has claims)
         has_claim = np.random.random() < 0.15  # 15% claim probability
@@ -112,7 +112,7 @@ def generate_insurance_data(n_records=10000):
             # Claim amount influenced by vehicle value and type
             claim_severity = np.random.exponential(3000)
             claim_severity = min(claim_severity, custom_value_estimate * 0.8)  # Cap at 80% of vehicle value
-            total_claims = round(claim_severity, 2)
+            total_claims = max(round(claim_severity, 2), 100)  # Minimum claim of $100
         else:
             total_claims = 0.0
             
