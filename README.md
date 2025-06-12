@@ -128,6 +128,8 @@ insurance-risk-analytics-predictive-modeling/
    jupyter notebook
    ```
 
+## Find out Detailed documentation about the code at  [@Documentation](https://docs.google.com/document/d/1jJFYrbnRbeQBQ52i81veXWG-isA0j1BDJCXs_-ScGGQ/edit?usp=sharing)
+
 ### Usage
 
 1. **Start with EDA**: Open `notebooks/01_exploratory_data_analysis.ipynb`
@@ -136,6 +138,8 @@ insurance-risk-analytics-predictive-modeling/
 4. **Build Models**: Finally, open `notebooks/04_predictive_modeling.ipynb`
 
 ## 📈 Key Analyses <a name="key-analyses"></a>
+
+
 
 ### Loss Ratio Analysis
 - Calculate overall Loss Ratio (TotalClaims / TotalPremium)
@@ -169,7 +173,7 @@ Key EDA components include:
 
 ## 🤖 Machine Learning Models <a name="ml-models"></a>
 
-### Task 4: Predictive Modeling (✅ **COMPLETED**)
+### Task 4: Predictive Modeling (**COMPLETED**)
 
 **Objective**: Build and evaluate predictive models for dynamic, risk-based pricing system.
 
@@ -248,3 +252,6 @@ This project is [MIT](./MIT.md) licensed.
 <div align="center">
   <p><strong>📊 Building the Future of Insurance Analytics 🚀</strong></p>
 </div>
+
+
+
