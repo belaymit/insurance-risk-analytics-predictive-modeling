@@ -1,43 +1,27 @@
-# Data Science Core
+# Add your project dependencies here
+
+# Data manipulation and analysis
 pandas>=1.5.0
-numpy>=1.24.0
-scipy>=1.10.0
+numpy>=1.21.0
 
-# Data Visualization
-matplotlib>=3.6.0
-seaborn>=0.12.0
-plotly>=5.15.0
+# Machine learning and modeling
+scikit-learn>=1.2.0
 
-# Machine Learning
-scikit-learn>=1.3.0
-xgboost>=1.7.0
-lightgbm>=3.3.0
-statsmodels>=0.14.0
+# Data visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
 
-# Jupyter and Development
+# Statistical analysis
+scipy>=1.9.0
+
+# Jupyter notebook support
 jupyter>=1.0.0
-ipykernel>=6.20.0
-notebook>=6.5.0
+ipykernel>=6.0.0
 
-# Data Processing
-openpyxl>=3.0.0
-xlrd>=2.0.0
-
-# Statistical Analysis
-pingouin>=0.5.0
-researchpy>=0.3.0
-
-# Utilities
-tqdm>=4.64.0
-python-dotenv>=1.0.0
-
-# Testing
+# Development and testing
 pytest>=7.0.0
-pytest-cov>=4.0.0
+black>=22.0.0
+flake8>=5.0.0
 
-# Code Quality
-black>=23.0.0
-flake8>=6.0.0
-
-# Documentation
-sphinx>=5.0.0 
+# Environment management
+python-dotenv>=0.19.0
